@@ -1,0 +1,5 @@
+Cluster,Name,Size,Share (%),Top Categories,Top Problem Modes,Age Missing (%),Avg Scaled Age,Fixed (%),Repairable (%),EOL (%),Salvageable Rate (%)
+0,Cluster 0: High-Wear Domestic Appliances,47182,19.9,"Vacuum (9.8%), Coffee maker (8.0%), Power tool (7.6%)","Other Problem (47.8%), Power / Startup Failure (12.3%), Unknown (6.8%)",0.0,-0.3,52.3,21.7,26.0,74.0
+1,Cluster 1: Vintage / Modular Electronics,12462,5.2,"Hi-Fi separates (14.9%), Sewing machine (11.6%), Lamp (10.7%)","Other Problem (50.5%), Power / Startup Failure (12.1%), Cable / Wiring (7.8%)",0.0,3.54,58.8,19.8,21.4,78.6
+2,Cluster 2: Modern Appliances (Uncertain Age),101314,42.7,"Vacuum (10.8%), Coffee maker (7.8%), Power tool (7.6%)","Other Problem (39.9%), Unknown (22.6%), Power / Startup Failure (10.4%)",83.0,-0.17,54.6,18.0,27.4,72.6
+3,Cluster 3: Lighting & Low-Voltage Peripherals,76563,32.2,"Lamp (13.1%), Small home electrical (6.6%), Watch/clock (6.0%)","Other Problem (35.1%), Unknown (34.6%), Power / Startup Failure (7.3%)",94.3,-0.17,58.5,16.0,25.5,74.5

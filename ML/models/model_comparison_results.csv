@@ -1,0 +1,8 @@
+Task,Model,Accuracy,Precision,Recall,Weighted F1,Macro F1,Train Time (s)
+Binary Triage (Salvageable vs EOL),XGBoost (Binary) [Champion],0.7595,0.7639,0.9758,0.857,0.5511,33.67
+Binary Triage (Salvageable vs EOL),Random Forest (Binary),0.7457,0.7462,0.9935,0.8523,0.4701,0.98
+Binary Triage (Salvageable vs EOL),Logistic Regression (Binary),0.7599,0.7712,0.9595,0.8551,0.5777,1.68
+Multi-Class (Fixed/Repair/EOL),XGBoost (Multi-Class) [Champion],0.6131,0.6147,0.6131,0.5519,0.4552,72.66
+Multi-Class (Fixed/Repair/EOL),Random Forest (Multi-Class),0.5796,0.6246,0.5796,0.4629,0.3315,0.8
+Multi-Class (Fixed/Repair/EOL),Decision Tree (Multi-Class),0.5774,0.5681,0.5774,0.4904,0.369,0.87
+Multi-Class (Fixed/Repair/EOL),Logistic Regression (Multi-Class),0.6128,0.5941,0.6128,0.5733,0.4867,3.81

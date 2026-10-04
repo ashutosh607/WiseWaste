@@ -1,0 +1,255 @@
+:root {
+  --bg-primary: #FAF8F5;
+  --bg-secondary: #F3F0E8;
+  --bg-tertiary: #ECE8DD;
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #F6F4ED;
+  --bg-dark: #121211;
+  --bg-dark-card: #1C1C1A;
+
+  --text-main: #141413;
+  --text-body: #3D3B37;
+  --text-muted: #736F66;
+  --text-light: #9C978D;
+  --text-on-dark: #FAF8F5;
+
+  --border-light: #E4DFD5;
+  --border-medium: #D4CDC0;
+  --border-dark: #2B2A27;
+
+  --accent-green: #2B693A;
+  --accent-green-bg: #EAF3EC;
+  --accent-amber: #B45309;
+  --accent-amber-bg: #FEF3C7;
+  --accent-red: #A32828;
+  --accent-red-bg: #FEE2E2;
+
+  --font-serif: 'Newsreader', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Typography Presets */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--text-main);
+  letter-spacing: -0.015em;
+}
+
+/* Technical Badges and Labels */
+.technical-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.technical-badge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+.badge-green {
+  background-color: var(--accent-green-bg);
+  color: var(--accent-green);
+  border: 1px solid rgba(43, 105, 58, 0.2);
+}
+
+.badge-amber {
+  background-color: var(--accent-amber-bg);
+  color: var(--accent-amber);
+  border: 1px solid rgba(180, 83, 9, 0.2);
+}
+
+.badge-red {
+  background-color: var(--accent-red-bg);
+  color: var(--accent-red);
+  border: 1px solid rgba(163, 40, 40, 0.2);
+}
+
+.badge-neutral {
+  background-color: var(--bg-secondary);
+  color: var(--text-body);
+  border: 1px solid var(--border-light);
+}
+
+/* Hairline Borders */
+.border-b-hairline {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.border-t-hairline {
+  border-top: 1px solid var(--border-light);
+}
+
+.border-hairline {
+  border: 1px solid var(--border-light);
+}
+
+/* Layout container */
+.app-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Buttons */
+.btn-primary-black {
+  background-color: var(--text-main);
+  color: var(--bg-primary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 10px 20px;
+  border: 1px solid var(--text-main);
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-primary-black:hover {
+  background-color: #2B2A27;
+  transform: translateY(-1px);
+}
+
+.btn-secondary-ghost {
+  background-color: transparent;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 10px 18px;
+  border: 1px solid var(--border-medium);
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-secondary-ghost:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--text-main);
+}
+
+/* Radar & Pulse Animations */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: radar-pulse 3s infinite ease-in-out;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-light);
+}
+
+/* Code block / terminal */
+.terminal-window {
+  background-color: #171716;
+  color: #E2DFD8;
+  font-family: var(--font-mono);
+  border: 1px solid #2B2A27;
+  border-radius: 3px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive grid */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .check-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .results-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

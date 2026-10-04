@@ -1,0 +1,22 @@
+[
+  {
+    "record_id": "WW-7758-REV3",
+    "timestamp": "2026-10-04T05:08:46.284Z",
+    "product_category": "Mobile",
+    "brand": "Dell",
+    "product_age": 2,
+    "problem": "Doesn't turn on and shows no power when connected to original AC adapter.",
+    "prediction": "Fixed",
+    "confidence": 0.78
+  },
+  {
+    "record_id": "WW-8614-REV3",
+    "timestamp": "2026-10-04T04:59:20.064Z",
+    "product_category": "Laptop",
+    "brand": "Dell",
+    "product_age": 4,
+    "problem": "Doesn't turn on and shows no power when connected to original AC adapter",
+    "prediction": "Fixed",
+    "confidence": 0.77
+  }
+]
